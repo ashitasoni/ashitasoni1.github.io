@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<title>My Portfolio</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Great Vibes" rel="stylesheet" type="text/css">
+
+	<style>
+
+		.circle{
+			height: 300px;
+			width: 300px;
+			padding: 20px 40px;
+			border-radius: 50%;
+			display: inline-block;
+			background-color: #ffffff;
+			color: rgb(125, 125, 125);
+		}
+		body{
+			font-family: Muli !important;
+		}
+		h1{
+			font-size:37px !important;
+			font-weight: bold !important;
+		}
+		h2{
+			font-size: 27px;
+			font-weight: bold;
+		}
+		.bg-1{
+			background-color: rgb(255, 167, 48) !important;
+
+			color: #ffffff !important;
+			padding: 120px 300px !important;
+		}
+		.bg-2{
+			background-color: rgb(240, 240, 240);
+			color: rgb(125, 125, 125);
+			padding: 60px 60px !important;
+			text-align: center;
+		}
+
+		.row{
+			padding: 30px 30px !important;
+		}
+		.bg-nav{
+			padding: 0px 0px !important;
+		}
+
+		.navbar {
+			margin-bottom: 0 !important;
+			background-color: rgb(10, 10, 10) !important;
+			border: 0 !important;
+			font-size: 11px !important;
+			letter-spacing: 4px !important;
+		}
+
+		.navbar li a, .navbar{
+			color: rgb(255, 255, 255) !important;
+		}
+
+		.navbar-nav li a:hover {
+			color: rgb(150, 150, 150) !important;
+		}
+		.quotes{
+			font-family: Great Vibes !important;
+			font-size: 40px !important;
+		}
+		footer{
+			background-color: rgb(10, 10, 10) !important;
+			padding: 20px !important;
+			border: 0 !important;
+			color: rgb(255, 255, 255) !important;
+			font-size: 15px !important;
+			letter-spacing: 4px !important;
+		}
+
+	</style>
+</head>
+
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top bg-nav">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        </button>
+    		</div>
+    		<div class="collapse navbar-collapse" id="myNavbar">
+    			<ul class="nav navbar-nav navbar-right">
+			<li><a href="#">ABOUT</a></li>
+        		<li><a href="#projects">PROJECTS</a></li>
+			<li><a href="#artwork">ARTWORK</a></li>
+			<li><a href="#design">DESIGNS</a></li>
+			<li><a href="#kshitij">KSHITIJ</a></li>
+      			</ul>
+    		</div>
+  	</div>
+</nav>
+
+</br>
+
+
+<div class="container-fluid bg-1 text-center">
+	<img src="specs.png" style="width: 25%; height: 25%;">
+	<h1> Hello, I'm Ashita Soni</h1>
+
+	<p style="font-size: 20px;">I'm an engineering student whose inclination towards Art and Technology has brought her here.</p>
+	<!--<p style="font-size: 20px;">You'll find me ...</p>-->
+</div>
+<div id="projects" class="container-fluid bg-2">
+	<img src="projects.png" style="width: 5%; height: 5%;">
+	<h1>PROJECTS</h1>
+	<h4>Below are some technical as well as non-technical projects that I've done over the course.</h4>
+	<div class="row">
+		<h2 style="background-color: #333333; color: #ffffff; padding: 10px;" class="container-fluid">Query Closing Prediction on Stack Overflow (Q&A Website)</h2>		
+
+		<div class="col-sm-3">
+		<img src="probtrans.png" style="width: 300px; height: 200px;">
+		</div>
+		<div class="col-sm-1">
+		<br><br><br><br><br>
+		<i class="glyphicon glyphicon-arrow-right"></i>
+		</div>
+		<div class="col-sm-3">
+		<img src="processtrans.png" style="width: 300px; height: 200px;">
+		</div>
+		<div class="col-sm-1">
+		<br><br><br><br><br>
+		<i class="glyphicon glyphicon-arrow-right"></i>
+		</div>
+		<div class="col-sm-3">
+		<img src="soltrans.png" style="width: 300px; height: 200px;">
+		</div>
+		<div class="col-sm-4">
+		<h3 style="text-align: center">Problem</h3>	
+		<p style="text-align: center">With over 13 million questions and 6 million users, Stack Overflow(SO) is a Question and answer website where computer scientists can post and answer questions. As the community has grown, the ratio of answers to
+questions has decreased by over 80 percent. Therefore, community moderators prevent content dilution(which is often a result of unfamiliarity of new users with SO guidelines) by closing questions that are of low quality citing reason (Duplicate, off topic, subjective, unclear or localized)for closing it as well. </p>	
+		</div>
+		<div class="col-sm-4">
+		<h3 style="text-align: center">Solution</h3>
+		<p style="text-align: center">In order to help new users get acclimated to the site and reduce moderator
+burden by automating quality control, our objective is to build a classifier to predict whether a user’s question will be closed by the aid of machine learning algorithms.</p>	
+		</div>
+		<div class="col-sm-4">
+		<h3 style="text-align: center">Outcome</h3>
+		<p style="text-align: center">On the successful completion of the project, our model will be able to predict wether a question posted on SO should be closed or not, with significant accuracy. We further aim to predict the reason for closure of a question, if possible.</p>
+		</div>
+
+
+	</div>
+
+		<br>
+	<div class="row">
+		<div class="col-sm-3">
+		<img src="q.png" style="width: 100%; height: 160px;">
+		</div>
+		<div class="col-sm-3">
+		<img src="r.png" style="width: 100%; height: 160px;">
+		</div>
+		<div class="col-sm-3">
+		<img src="s.png" style="width: 100%; height: 160px;">
+		</div>
+		<div class="col-sm-3">
+		<img src="t.png" style="width: 100%; height: 160px;">
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+	<div class="row">
+		<h2 style="background-color: #333333; color: #ffffff; padding: 10px;" class="container-fluid">Project Udaan</h2>
+
+		<div class="col-sm-3">
+		<img src="probtrans.png" style="width: 300px; height: 200px;">
+		</div>
+		<div class="col-sm-1">
+		<br><br><br><br><br>
+		<i class="glyphicon glyphicon-arrow-right"></i>
+		</div>
+		<div class="col-sm-3">
+		<img src="processtrans.png" style="width: 300px; height: 200px;">
+		</div>
+		<div class="col-sm-1">
+		<br><br><br><br><br>
+		<i class="glyphicon glyphicon-arrow-right"></i>
+		</div>
+		<div class="col-sm-3">
+		<img src="soltrans.png" style="width: 300px; height: 200px;">
+		</div>
+		<div class="col-sm-4">
+		<!--<h3 style="text-align: center">Problem</h3>-->
+		<p style="text-align: center">Government schools in India lack in providing wholesome education to its students. One would generally 2-3 teachers in a government school who teach all the subjects to all the classes from third to eight grade in school. On the other hand, private schools house abundance of teachers and extra curricular activities that help in an all-round development of children.</p>		
+		</div>
+		<div class="col-sm-4">
+		<!--<h3 style="text-align: center">Solution</h3>-->
+		<p style="text-align: center">Udaan (<i>which translates to 'uplifting to greater heights'</i>) is a project under the youth led NGO Gramiksha, which focuses on developing personal and social qualities among children and promoting extra curricular activities in government schools by conducting 3 hour long Saturday Sessions in schools.</p>	
+		</div>
+		<div class="col-sm-4">
+		<!--<h3 style="text-align: center">Outcome</h3>-->
+		<p style="text-align: center">The Project is operative in over 6 cities in India- Indore, Bhopal, Gwalior, Delhi and Jaipur, and stretches over a period of 20 weeks, where students are engaged in activities like Sports, Science exhibitions, self defense workshops, public speaking, Art, Music, Theatrics and Dance. I, along with 30 other college students, have carried out the project in Government School Subhash Nagar located in Indore.</p>
+		</div>
+
+		<br>
+		<div class="col-sm-3">
+		<img src="b.png" style="width: 100%; height: 160px;">
+		</div>
+		<div class="col-sm-3">
+		<img src="d.jpeg" style="width: 100%; height: 160px;">
+		</div>
+		<div class="col-sm-3">
+		<img src="e.jpeg" style="width: 100%; height: 160px;">
+		</div>
+		<div class="col-sm-3">
+		<img src="h.jpeg" style="width: 100%; height: 160px;">
+		</div>
+		
+
+
+	</div>
+
+	
+	<!--<div class="row">
+		<h2>Attendance and Performance Tracker</h2>
+		<div class="col-sm-3">
+		<img src="probtrans.png" style="width: 300px; height: 200px;">
+		</div>
+		<div class="col-sm-1">
+		<br><br><br><br><br>
+		<i class="glyphicon glyphicon-arrow-right"></i>
+		</div>
+		<div class="col-sm-3">
+		<img src="processtrans.png" style="width: 300px; height: 200px;">
+		</div>
+		<div class="col-sm-1">
+		<br><br><br><br><br>
+		<i class="glyphicon glyphicon-arrow-right"></i>
+		</div>
+		<div class="col-sm-3">
+		<img src="soltrans.png" style="width: 300px; height: 200px;">
+		</div>
+		<div class="col-sm-4">
+		<h3 style="text-align: center">Problem</h3>	
+		</div>
+		<div class="col-sm-4">
+		<h3 style="text-align: center">Solution</h3>
+		</div>
+		<div class="col-sm-4">
+		<h3 style="text-align: center">Outcome</h3>
+		</div>
+	</div>-->
+	<div class="row">
+		<h2 style="background-color: #333333; color: #ffffff; padding: 10px;" class="container-fluid">Money Matterns: Group Expense Manager</h2>
+
+
+		<div class="col-sm-3">
+		<img src="probtrans.png" style="width: 300px; height: 200px;">
+		</div>
+		<div class="col-sm-1">
+		<br><br><br><br><br>
+		<i class="glyphicon glyphicon-arrow-right"></i>
+		</div>
+		<div class="col-sm-3">
+		<img src="processtrans.png" style="width: 300px; height: 200px;">
+		</div>
+		<div class="col-sm-1">
+		<br><br><br><br><br>
+		<i class="glyphicon glyphicon-arrow-right"></i>
+		</div>
+		<div class="col-sm-3">
+		<img src="soltrans.png" style="width: 300px; height: 200px;">
+		</div>
+		<div class="col-sm-4">
+		<h3 style="text-align: center">Problem</h3>
+		<p style="text-align: center">2019 passing out batch of Engineering students in college was surveyed about their group expense habits and it was observed that majority of the respondents generally went out to eat with friends or flat mates every week and 70% of those found it difficult to keep track of individual expenses.</p>		
+		</div>
+		<div class="col-sm-4">
+		<h3 style="text-align: center">Solution</h3>
+		<p style="text-align: center">Thus, we decided to develop a website where users can create an account and keep track of their expenses. Just create a group, add an activity, input the users involved, and amount paid by each.</p>	
+		</div>
+		<div class="col-sm-4">
+		<h3 style="text-align: center">Outcome</h3>
+		<p style="text-align: center">The website will then calculate who owes whom and how much. The locally hosted website is being used by over 60 users. </p>
+		</div>
+
+
+
+	</div>
+
+	<div class="row">
+		<br>
+		<div class="col-sm-3">
+		<img src="n.jpg" style="width: 100%; height: 160px;">
+		</div>
+		<div class="col-sm-3">
+		<img src="o.jpg" style="width: 100%; height: 160px;">
+		</div>
+		<div class="col-sm-3">
+		<img src="p.jpg" style="width: 100%; height: 160px;">
+		</div>
+		<div class="col-sm-3">
+		<img src="p.jpg" style="width: 100%; height: 160px;">
+		</div>
+
+
+
+	</div>
+
+
+
+
+	
+
+
+</div>
+
+<div id="artwork" class="container-fluid bg-2" style="background-color: #F16A73; color: #ffffff;">
+	<img src="artwork.png" style="width: 25%; height: 25%;">
+	<h1>ARTWORK</h1>
+	<h4>Art is to me what melody is to music</h4>
+	<div class="row">
+		<div class="col-sm-3">
+		<h2>Mandala</h2>
+		</div>
+		<div class="col-sm-9">
+			<div class="col-sm-4">
+			<img src="mand1.jpg" style="width: 100%;">		
+			</div>
+			<div class="col-sm-4">
+			<img src="mand2.jpg" style="width: 100%;">		
+			</div>			
+			<div class="col-sm-4">
+			<img src="mand3.jpg" style="width: 100%;">		
+			</div>
+			<div class="col-sm-4">
+			<img src="mand4.jpg" style="width: 100%;">		
+			</div>
+			<div class="col-sm-4">
+			<img src="mand5.jpg" style="width: 100%;">		
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4">
+			<div class="circle">
+			<h2>Grafitti</h2>
+			</div>
+		</div>
+		<div class="col-sm-8">
+			<div class="col-sm-6">
+			<img src="grafitti1.jpg" style="width: 100%;">		
+			</div>
+			<div class="col-sm-6">
+			<img src="grafitti2.jpg" style="width: 100%;">			
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-3">
+		<h2>Sketches</h2>
+		</div>
+		<div class="col-sm-9">
+			<div class="col-sm-4" style="padding: 10px;">
+			<img src="sketch1.jpg" style="width: 100%;"><br><br>		
+			<img src="sketch2.jpg" style="width: 100%;"><br><br>
+			<img src="sketch3.jpg" style="width: 100%;"><br><br>		
+			</div>
+
+			<div class="col-sm-4" style="padding: 10px;">
+			<img src="sketch4.jpg" style="width: 100%;"><br><br>	
+			<img src="sketch5.jpg" style="width: 100%;"><br><br>		
+			<img src="sketch6.jpg" style="width: 100%;"><br><br>		
+			</div>
+
+			<div class="col-sm-4" style="padding: 10px;">
+			<img src="sketch7.jpg" style="width: 100%;"><br><br>		
+			<img src="sketch8.jpg" style="width: 100%;"><br><br>		
+			<img src="sketch9.jpg" style="width: 100%;"><br><br>		
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="container-fluid bg-2" id="design">
+	<h1>DESIGNS</h1>
+	<h4>Come have a sneak peek into my designing book</h4>
+
+	<div class="row">
+		<div class="col-sm-4" style="padding:10px;">
+			<img src="designing copy_1.jpg" style="width: 100%;"><br><br>
+			<img src="designing copy_2.jpg" style="width: 100%;"><br><br>
+			<img src="designing copy_3.jpg" style="width: 100%;"><br><br>
+		        <img src="designing copy_4.jpg" style="width: 100%;"><br><br>
+    			<img src="designing copy_5.jpg" style="width: 100%;"><br><br>
+    			<img src="designing copy_6.jpg" style="width: 100%;"><br><br>
+    			<img src="designing copy_7.jpg" style="width: 100%;"><br><br>
+    			<img src="designing copy_27.jpg" style="width: 100%;"><br><br>
+    			<img src="designing copy_28.jpg" style="width: 100%;"><br><br>
+    			<img src="designing copy_29.jpg" style="width: 100%;"><br><br>
+  		</div>
+  		<div class="col-sm-4">
+    			<img src="designing copy_8.jpg" style="width: 100%;"><br><br>
+    			<img src="designing copy_9.jpg" style="width: 100%;"><br><br>
+    			<img src="designing copy_10.jpg" style="width: 100%;"><br><br>
+    			<img src="designing copy_11.jpg" style="width: 100%;"><br><br>
+    			<img src="designing copy_12.jpg" style="width: 100%;"><br><br>
+    			<img src="designing copy_13.jpg" style="width: 100%;"><br><br>
+    			<img src="designing copy_30.jpg" style="width: 100%;"><br><br>
+    			<img src="designing copy_31.jpg" style="width: 100%;"><br><br>
+		</div>
+		<div class="col-sm-4">
+			<img src="designing copy_21.jpg" style="width: 100%;"><br><br>
+    			<img src="designing copy_22.jpg" style="width: 100%;"><br><br>
+    			<img src="designing copy_23.jpg" style="width: 100%;"><br><br>
+    			<img src="designing copy_24.jpg" style="width: 100%;"><br><br>
+    			<img src="designing copy_25.jpg" style="width: 100%;"><br><br>
+    			<img src="designing copy_26.jpg" style="width: 100%;"><br><br>
+    			<img src="designing copy_32.jpg" style="width: 100%;"><br><br>
+    			<img src="designing copy_33.jpg" style="width: 100%;"><br><br>
+    			<img src="designing copy_34.jpg" style="width: 100%;"><br><br>
+  		</div>
+	</div>
+
+</div>
+
+
+
+<div id="kshitij" class="container-fluid bg-2" style="background-color: #94B1FE; color: #ffffff;">
+	<h1>KSHITIJ</h1>
+	<h4>Being the Head of the official cultural society of collge has been an honor. We at Club Kshitij work towards promoting dance, drama and music activities within college campus by organizing competitions, workshops, and flashmobs. Here is a little glimpse into our world at Kshitij.</h4>
+	<div class="row">
+		<div class="col-sm-4">
+		<br><br><br><br>
+		<div class="circle">
+			<h2>Roobaroo</h2>
+			<p>Roobaroo is a talent hunt competition organized every year in February, wherein participants perform acts on mimicking, drama, dancing, speed painting, plays, band performance and singing.</p>
+		</div>
+		</div>
+		<div class="col-sm-8">
+			<!--<div class="row">-->
+				<div class="col-sm-6"style="padding: 10px;">
+				<img src="rbr1.jpg" style="width: 100%;">
+				</div>
+				<div class="col-sm-6"style="padding: 10px;">
+				<img src="rbr3.jpg" style="width: 100%;">
+				</div>
+			<!--</div>-->
+			<!--<div class="row">-->
+				<div class="col-sm-6"style="padding: 10px;">
+				<img src="rbr6.jpg" style="width: 100%;">
+				</div>
+				<div class="col-sm-6"style="padding: 10px;">
+				<img src="rbr7.jpg" style="width: 100%;">
+				</div>
+			<!--</div>-->
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-8">
+			<!--<div class="row" style="padding: 10px;">-->
+				<div class="col-sm-6"style="padding: 10px;">
+				<img src="swr1.jpg" style="width: 100%;">
+				</div>
+				<div class="col-sm-6"style="padding: 10px;">
+				<img src="swr3.jpg" style="width: 100%;">
+				</div>
+			<!--</div>-->
+			<!--<div class="row" style="padding: 10px;">-->
+				<div class="col-sm-6"style="padding: 10px;">
+				<img src="swr2.jpg" style="width: 100%;">
+				</div>
+				<div class="col-sm-6"style="padding: 10px;">
+				<img src="swr4.jpg" style="width: 100%;">
+				</div>
+			<!--</div>-->
+		</div>
+		<br><br><br><br>	
+		<div class="col-sm-4 circle">	
+			<h2>Swaranjali</h2>
+			<p>Swaranjali is an inter college singing competition, wherein participants from different colleges come together to battle against each other. Swaranjali has been a part of Kshitij family for over two years now.</p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4">
+		<br><br><br><br>
+		<div class="circle">
+			<h2>Flash Mob</h2>
+			<p>Flash Mobs are the ...</p>
+		</div>
+		</div>
+		<div class="col-sm-8">
+
+				<div class="col-sm-3"style="padding: 10px;">
+				<img src="fm1.jpg" style="width: 100%;">
+				</div>
+				<div class="col-sm-3"style="padding: 10px;">
+				<img src="fm3.jpg" style="width: 100%;">
+				</div>
+
+
+				<div class="col-sm-3"style="padding: 10px;">
+				<img src="fm6.jpg" style="width: 100%;">
+				</div>
+				<div class="col-sm-3"style="padding: 10px;">
+				<img src="fm5.jpg" style="width: 100%;">
+				</div>
+
+		</div>
+	</div>
+</div>
+
+
+
+<div class="container-fluid text-center quotes bg-2">
+	<q>Beauty and brains, pleasure and usability - they should go hand in hand.</q>
+	<p style="font-size: 25px;">-Donald Norman</p>
+</div>
+
+<footer class="text-center">
+	<a href="#"><i class="glyphicon glyphicon-triangle-top"></i><br>Back to top</a><br><br>
+	<p><i class="glyphicon glyphicon-envelope">:  </i>ashita26soni@gmail.com</p>
+</footer>
+
+
+</body>
+
+</html>
